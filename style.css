@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body{ */
+    /* background-color: black; */
+/* } */
+
+main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+     background-image: url("bg-intro-desktop.png");
+     background:#f5428d;
+}
+
+.large-container{
+    
+}
+
