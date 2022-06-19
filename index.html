@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive page</title>
+    <title>Single responsive page design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
 </head>
 <body>
     <main>
-        <div class="large-container">
+        <section class="largest-container">
+        
             <div class="left">
                 <h1>Learn to code by watching others</h1>
                 <p>See how experienced developers solve problems in real-time.
-                    <br>
                     Watching sripted tutorials is great, but understanding how developers think is invaluable.
-
                 </p>
             </div>
             
 
-            <div>
+            <div class="forms">
                 <div class="top-right"> 
-                    <p><strong>Try it free 7 days </strong>then $20/mo. thereafter</p>
+                    <p><strong>Try it free 7 days </strong><span class="light-weight">then $20/mo. thereafter</span></p>
                 </div>
-                <form class="contact" action="" method="post">
+                <form class="form-input" action="" method="post">
                     <input type="text" name="name" class="textBox" placeholder="First Name" required>
+                    <p class="display-error"><em>First Name cannot be empty</em></p>
                     <input type="text" name="name" class="textBox" placeholder="Last Name" required>
+                    <p class="display-error"><em>Last Name cannot be empty</em></p>
                     <input type="email" name="email" class="textBox" placeholder="Email Address" required>
+                    <p class="display-error"><em>Looks like this is not an email</em></p>
                 
                     <input type="password" name="password" class="textBox" placeholder="Type in your password" required>
+                    <p class="display-error"><em>Password cannot be empty</em></p>
                     <input type="submit" name="submit" class="sendBtn" value="CLAIM YOUR FREE TRIAL">
+                    <p class="red-text">By clicking the 
+                        button you are agreeing to our <a href="#"> Terms and Services</a> </p>
                 </form>
-                <p class="red-text"><small class="small-text">By clicking the button you are agreeing to our </small> Terms and Services</p>
-
+               
                 
          </div> 
-        </div>
+        
+        </section>
     </main>
 </body>
 </html>

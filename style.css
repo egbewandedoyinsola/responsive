@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,19 +11,142 @@
     /* background-color: black; */
 /* } */
 
-main{
-    width: 60%;
-    margin: auto;
+.largest-container{
+    width: 100%; 
+    margin: 30px auto;
+    max-width: 1440px;
     display: flex;
-
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-     height: 100vh;
-     background-image: url("bg-intro-desktop.png");
-     background:#f5428d;
-}
-
-.large-container{
+    background-image: url(./bg-intro-desktop.png);
+    background-color: #ff5757;
+    background-repeat: no-repeat;
+    padding: 10px;
     
 }
 
+.left{
+    color: white;
+    margin: auto 30px;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 150%;
+}
+
+.forms {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.form-input{
+    width: 80%;
+    height: 100%;
+    margin: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right{
+    color:white;
+    text-align: center;
+    margin: 10% auto 5%;
+    width: 80%;
+    background-color:#333399;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 6px #6460605b;
+
+}
+
+.light-weight{
+    color: rgb(216, 206, 206);
+}
+
+.form-input{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 10%;
+    margin-top: auto;
+    padding: 2em 2em;
+    border-radius: 6px;
+    box-shadow: 0px 6px #695f5f5b;
+}
+
+
+input{
+    font-size: 16px;
+    height: 25px;
+    padding: 4% 5%;
+    margin: 0.3em;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+input[type="submit"] {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px hsl(153, 65%, 70%);
+    font-size: bold;
+    cursor: pointer;
+    background: hsl(154, 59%, 51%);
+    font-size: 11px;
+    
+  }
+
+
+  .red-text{
+    color: hsl(246, 25%, 77%);
+    font-size: 13px;
+    margin: 7px auto;
+  }
+
+  a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  input:invalid {
+    background-position: right;
+    background-repeat: no-repeat;
+    border-color: hsl(0, 100%, 74%);
+    background-image: url(./icon-error.svg);
+    background-size: 20px;
+    background-position-x: 95%;
+  }
+  .display-error {
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    
+  }
+  @media screen and (max-width: 1440px) {
+    body{
+        width: 100%;
+    }
+    }
+    @media  screen and (min-width: 375px) {
+        body {
+            width: 100%;
+        }
+    }
